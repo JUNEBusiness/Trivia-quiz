@@ -23,8 +23,7 @@
                         ls[j].style.backgroundColor = "#d9edff";
                     }
                         incorrects[i].style.backgroundColor = "red";
-                        let response = document.querySelector("#feedback1").innerHtml = "Incorrect";
-                        console.log(response);
+                        document.querySelector("#feedback1").innerHTML = "Incorrect!";
                     });
                 }
 
@@ -35,8 +34,7 @@
                     }
                     if (this.className === "correct") {
                         this.style.backgroundColor = "green";
-                        let response = document.querySelector("#feedback1").innerHtml = "Correct";
-                        console.log(response);
+                        document.querySelector("#feedback1").innerHTML = "Correct!";
                     }
                 }
 
@@ -47,12 +45,10 @@
                 function check () {
                     if (textBox.value.toLowerCase() === "hand") {
                         textBox.style.backgroundColor = "green";
-                        let response = document.querySelector("#feedback2").innerHtml = "Correct";
-                        console.log(response);
+                        document.querySelector("#feedback2").innerHTML = "Correct!";
                     } else {
                         textBox.style.backgroundColor = "red";
-                        let response = document.querySelector("#feedback2").innerHtml = "Incorrect";
-                        console.log(response);
+                        document.querySelector("#feedback2").innerHTML = "Correct!";
                     }
                 }
             })
